@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F94D7C00258C0F20008F31B8 /* InfosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D7BFF258C0F20008F31B8 /* InfosViewController.swift */; };
 		F97FAB52258B524A0097B9EA /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FAB51258B524A0097B9EA /* Utilities.swift */; };
 		F9DDAC3B258AD261002DB3BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DDAC3A258AD261002DB3BF /* AppDelegate.swift */; };
 		F9DDAC3D258AD261002DB3BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DDAC3C258AD261002DB3BF /* SceneDelegate.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F94D7BFF258C0F20008F31B8 /* InfosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfosViewController.swift; sourceTree = "<group>"; };
 		F97FAB51258B524A0097B9EA /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		F9DDAC37258AD261002DB3BF /* Take Ur Pillz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Take Ur Pillz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9DDAC3A258AD261002DB3BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				F9DDAC3E258AD261002DB3BF /* ViewController.swift */,
+				F94D7BFF258C0F20008F31B8 /* InfosViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F94D7C00258C0F20008F31B8 /* InfosViewController.swift in Sources */,
 				F9DDAC3F258AD261002DB3BF /* ViewController.swift in Sources */,
 				F9DDAC3B258AD261002DB3BF /* AppDelegate.swift in Sources */,
 				F97FAB52258B524A0097B9EA /* Utilities.swift in Sources */,

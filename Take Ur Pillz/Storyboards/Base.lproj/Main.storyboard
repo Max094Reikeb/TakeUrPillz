@@ -1,24 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Take_Ur_Pillz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pills_background" translatesAutoresizingMaskIntoConstraints="NO" id="QZv-DJ-ckz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwC-lc-ogE">
+                                <rect key="frame" x="161.5" y="764" width="91" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Take it!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="KM0-k0-Rad" kind="show" id="qla-bJ-pc0"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pill" translatesAutoresizingMaskIntoConstraints="NO" id="vyu-HS-LaZ">
+                                <rect key="frame" x="50" y="291" width="314" height="314"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="314" id="YvM-vp-MAw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's time to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQA-gu-TUk">
+                                <rect key="frame" x="140" y="84" width="134" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take Ur Pillz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdY-Bt-POq">
+                                <rect key="frame" x="58" y="125" width="298" height="51.5"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vyu-HS-LaZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="3W1-jn-lle"/>
+                            <constraint firstItem="vyu-HS-LaZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9t9-DQ-zLr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MwC-lc-ogE" secondAttribute="bottom" constant="50" id="BrR-vB-bW3"/>
+                            <constraint firstItem="mdY-Bt-POq" firstAttribute="top" secondItem="OQA-gu-TUk" secondAttribute="bottom" constant="5" id="Df6-F5-t32"/>
+                            <constraint firstItem="mdY-Bt-POq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E2L-Mq-ha4"/>
+                            <constraint firstItem="OQA-gu-TUk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IsC-bk-LEg"/>
+                            <constraint firstAttribute="trailing" secondItem="QZv-DJ-ckz" secondAttribute="trailing" id="It8-UW-uE5"/>
+                            <constraint firstAttribute="bottom" secondItem="QZv-DJ-ckz" secondAttribute="bottom" id="J0a-Zb-I60"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vyu-HS-LaZ" secondAttribute="trailing" constant="30" id="NCS-S6-8Vq"/>
+                            <constraint firstItem="MwC-lc-ogE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VOQ-vf-VQW"/>
+                            <constraint firstItem="QZv-DJ-ckz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XnC-fr-pM1"/>
+                            <constraint firstItem="vyu-HS-LaZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="evU-mX-6IY"/>
+                            <constraint firstItem="OQA-gu-TUk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="40" id="r93-mL-8ij"/>
+                            <constraint firstItem="QZv-DJ-ckz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tUE-jy-zYv"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="takePillButton" destination="MwC-lc-ogE" id="yvM-6w-tlL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="35" y="77"/>
+        </scene>
+        <!--Infos View Controller-->
+        <scene sceneID="caa-hH-WT9">
+            <objects>
+                <viewController id="KM0-k0-Rad" customClass="InfosViewController" customModule="Take_Ur_Pillz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tHL-ix-RLR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="evM-1d-Xal"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mjt-mQ-WLU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gkf-pa-CV1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1222" y="76"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pill" width="1560" height="1561"/>
+        <image name="pills_background" width="3744" height="5616"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
