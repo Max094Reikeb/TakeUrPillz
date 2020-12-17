@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F97FAB52258B524A0097B9EA /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FAB51258B524A0097B9EA /* Utilities.swift */; };
 		F9DDAC3B258AD261002DB3BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DDAC3A258AD261002DB3BF /* AppDelegate.swift */; };
 		F9DDAC3D258AD261002DB3BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DDAC3C258AD261002DB3BF /* SceneDelegate.swift */; };
 		F9DDAC3F258AD261002DB3BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DDAC3E258AD261002DB3BF /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F97FAB51258B524A0097B9EA /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		F9DDAC37258AD261002DB3BF /* Take Ur Pillz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Take Ur Pillz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9DDAC3A258AD261002DB3BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9DDAC3C258AD261002DB3BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F97FAB4E258B519F0097B9EA /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				F9DDAC3A258AD261002DB3BF /* AppDelegate.swift */,
+				F9DDAC3C258AD261002DB3BF /* SceneDelegate.swift */,
+				F97FAB51258B524A0097B9EA /* Utilities.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		F97FAB4F258B51D60097B9EA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F9DDAC3E258AD261002DB3BF /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F97FAB50258B51DE0097B9EA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F9DDAC40258AD261002DB3BF /* Main.storyboard */,
+				F9DDAC45258AD263002DB3BF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		F9DDAC2E258AD261002DB3BF = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +128,10 @@
 		F9DDAC39258AD261002DB3BF /* Take Ur Pillz */ = {
 			isa = PBXGroup;
 			children = (
-				F9DDAC3A258AD261002DB3BF /* AppDelegate.swift */,
-				F9DDAC3C258AD261002DB3BF /* SceneDelegate.swift */,
-				F9DDAC3E258AD261002DB3BF /* ViewController.swift */,
-				F9DDAC40258AD261002DB3BF /* Main.storyboard */,
+				F97FAB4E258B519F0097B9EA /* Others */,
+				F97FAB4F258B51D60097B9EA /* Controllers */,
+				F97FAB50258B51DE0097B9EA /* Storyboards */,
 				F9DDAC43258AD263002DB3BF /* Assets.xcassets */,
-				F9DDAC45258AD263002DB3BF /* LaunchScreen.storyboard */,
 				F9DDAC48258AD263002DB3BF /* Info.plist */,
 			);
 			path = "Take Ur Pillz";
@@ -260,6 +287,7 @@
 			files = (
 				F9DDAC3F258AD261002DB3BF /* ViewController.swift in Sources */,
 				F9DDAC3B258AD261002DB3BF /* AppDelegate.swift in Sources */,
+				F97FAB52258B524A0097B9EA /* Utilities.swift in Sources */,
 				F9DDAC3D258AD261002DB3BF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

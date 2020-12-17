@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Take Ur Pillz
 //
-//  Created by Maxence Bekier on 17/12/2020.
+//  Created by Max094_Reikeb on 17/12/2020.
 //
 
 import UIKit
